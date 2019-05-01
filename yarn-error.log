@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js dev
+
+PATH: 
+  /home/mishuk/bin:/home/mishuk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mishuk/.config/composer/vendor/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.15.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /var/www/messmanagement/package.json: Unexpected token } in JSON at position 372
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:304:30)
+      at /usr/share/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "messmanagement",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/MishukAdhikari/messmanagement.git"
+    },
+    "keywords": [],
+    "author": "Mishuk Adhikari",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/MishukAdhikari/messmanagement/issues"
+    },
+    "homepage": "https://github.com/MishukAdhikari/messmanagement#readme",
+    "dependencies": {
+      "laravel-mix": "^4.0.15",
+      "vue": "^2.6.10"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
