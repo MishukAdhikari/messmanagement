@@ -1,1 +1,5 @@
-alert('bingo');
+var vm = new Vue({
+
+  el: "#demo"
+
+})
