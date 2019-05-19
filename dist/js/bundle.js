@@ -104,7 +104,9 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-alert('bingo');
+var vm = new Vue({
+  el: "#demo"
+});
 
 /***/ }),
 
